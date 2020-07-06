@@ -15,5 +15,10 @@ import CompanyAddress from './CompanyAddress';
 export default function NestedComp(props) {
   const { companyName, address, symbol } = props;
   // Your code
-  
+  return (
+    <div>
+      <NameDisplay companyName={companyName} symbol={symbol} />
+      <CompanyAddress address={address} />
+    </div>
+  )
 }

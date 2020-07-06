@@ -8,5 +8,8 @@ import React from 'react'
  */
 export default function WithProps(props) {
   // Your code
-  
+  const { name } = props;
+  return (
+    <h1>Hi {name}</h1>
+  );
 }

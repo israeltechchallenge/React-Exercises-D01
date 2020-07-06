@@ -11,5 +11,14 @@ import React from 'react'
  */
 export default function ConditionalRendering(props) {
   // Your code
-  
+  const { number } = props;
+  if (number < 10) {
+    return <p>Your number is less than 10</p>
+  }
+  if (number > 10) {
+    return <h1>Your number is bigger than 10</h1>
+  }
+  if (!number) {
+    return <span>No number provided</span>
+  }
 }

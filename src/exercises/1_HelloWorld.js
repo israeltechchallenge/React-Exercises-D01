@@ -6,5 +6,7 @@ import React from 'react';
  */
 export default function HelloWorld() {
   // Your code here
- 
+  return (
+    <span>Hello World</span>
+  );
 } 

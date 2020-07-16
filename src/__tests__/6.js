@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from "@testing-library/react";
-import ListOfProducts from '../exercises/1_ListOfProducts';
+import ListOfProducts from '../exercises/6_ListOfProducts';
 
 it('should have three products', () => {
   const products = [

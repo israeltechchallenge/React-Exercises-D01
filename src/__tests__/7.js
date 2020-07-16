@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from "@testing-library/react";
-import WithChildren from '../exercises/2_WithChildren';
+import WithChildren from '../exercises/7_WithChildren';
 
 it('should have one child', () => {
   const { container } = render(

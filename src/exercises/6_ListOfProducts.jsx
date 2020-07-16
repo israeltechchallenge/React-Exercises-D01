@@ -10,4 +10,15 @@ import React from 'react'
  */
 export default function ListOfProducts(props) {
   // Your code
+  return (
+    <ul>
+      {props.products.map(item => {
+        return <li 
+         key={item.id}
+        >
+          {item.name} {typeof item.price !== 'undefined' ? item.price : 'N/A'}
+        </li>
+      })}
+    </ul>
+  )
 }

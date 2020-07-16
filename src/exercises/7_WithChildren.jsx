@@ -6,4 +6,9 @@ import React from 'react'
  */
 export default function WithChildren(props) {
   // Your code
+  return (
+    <div>
+      {props.children}
+    </div>
+  )
 }

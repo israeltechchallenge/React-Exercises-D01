@@ -5,6 +5,10 @@ import NameDisplay from '../exercises/4_NestedComp/NameDisplay';
 import { shallow } from 'enzyme';
 import { render } from "@testing-library/react";
 import '@testing-library/jest-dom/extend-expect';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 
 it('NameDisplay should have h1 with companyName and symbol', () => {
   const { getByText } = render(<NameDisplay companyName="a" symbol="b" />);
@@ -24,10 +28,10 @@ it('should have nested components', () => {
   expect(wrapper.find(CompanyAddress).length).toBe(1);
   expect(wrapper.find(NameDisplay).length).toBe(1);
 
-  const { getByText } = render(<NestedComp 
-    companyName="myComp" 
-    address="somewhere" 
-    symbol="mc" 
+  const { getByText } = render(<NestedComp
+    companyName="myComp"
+    address="somewhere"
+    symbol="mc"
   />);
 
   expect(getByText("myComp (mc)").tagName.toLowerCase()).toBe("h1");

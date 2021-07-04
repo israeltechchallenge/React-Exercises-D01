@@ -3,6 +3,10 @@ import { render } from "@testing-library/react";
 import { shallow } from 'enzyme';
 import CompWithState from '../exercises/5_CompWithState';
 import '@testing-library/jest-dom/extend-expect';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
 
 it('should increase when clicked', () => {
   const wrapper = shallow(<CompWithState />);

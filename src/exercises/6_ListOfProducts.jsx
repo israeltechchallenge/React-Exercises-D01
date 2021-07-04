@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 
 /**
  * Implement a simple function component that accepts "products" in props
@@ -8,6 +8,6 @@ import React from 'react'
  * the list should be nested in ul tag
  * Do not forget to add key to each property (use the id as the key, as it is unique)
  */
-export default function ListOfProducts(props) {
+export default class ListOfProducts extends Component {
   // Your code
 }

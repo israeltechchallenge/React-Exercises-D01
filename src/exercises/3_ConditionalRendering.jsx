@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 
 /**
  * Implement a simple function component that accepts one prop "number"
@@ -9,7 +9,6 @@ import React from 'react'
  * if no number provided, the component will render a span tag
  * with the text "No number provided"
  */
-export default function ConditionalRendering(props) {
-  // Your code
-  
+export default class ConditionalRendering extends Component {
+  // your code
 }

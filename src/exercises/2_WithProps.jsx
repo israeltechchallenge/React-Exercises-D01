@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 
 /**
  * Implement a simple function component that accepts one props "name"
@@ -6,7 +6,6 @@ import React from 'react'
  * the value in the prop "name"
  * if name is empty (empty string, undefined or null), render "Hi "
  */
-export default function WithProps(props) {
-  // Your code
-  
+export default class WithProps extends Component {
+  // your code
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from "@testing-library/react";
 import WithProps from '../exercises/2_WithProps';
+import '@testing-library/jest-dom/extend-expect';
 
 it('should have Hi {name}', () => {
   function test(name) {

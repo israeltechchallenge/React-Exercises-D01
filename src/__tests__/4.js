@@ -4,6 +4,7 @@ import CompanyAddress from '../exercises/4_NestedComp/CompanyAddress';
 import NameDisplay from '../exercises/4_NestedComp/NameDisplay';
 import { shallow } from 'enzyme';
 import { render } from "@testing-library/react";
+import '@testing-library/jest-dom/extend-expect';
 
 it('NameDisplay should have h1 with companyName and symbol', () => {
   const { getByText } = render(<NameDisplay companyName="a" symbol="b" />);

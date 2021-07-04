@@ -18,7 +18,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-ex1": "jest --testPathPattern=/__tests__/1.js",
+    "test-ex2": "jest --testPathPattern=/__tests__/2.js",
+    "test-ex3": "jest --testPathPattern=/__tests__/3.js",
+    "test-ex4": "jest --testPathPattern=/__tests__/4.js",
+    "test-ex5": "jest --testPathPattern=/__tests__/5.js",
+    "test-ex6": "jest --testPathPattern=/__tests__/6.js",
+    "test-ex7": "jest --testPathPattern=/__tests__/7.js"
   },
   "eslintConfig": {
     "extends": "react-app"

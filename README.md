@@ -43,6 +43,12 @@ To execute the tests, you should run:
 yarn test
 ```
 
+To test only one exercise, you should run test-ex + _number_ of the exercise"
+
+```bash
+yarn test-ex1
+```
+
 This will keep a process open, that will run the tests every time you save a file (watch mode)
 
 To kill the process, hit ctrl/cmd + c

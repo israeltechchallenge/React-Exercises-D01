@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from "@testing-library/react";
 import { shallow } from 'enzyme';
 import CompWithState from '../exercises/5_CompWithState';
+import '@testing-library/jest-dom/extend-expect';
 
 it('should increase when clicked', () => {
   const wrapper = shallow(<CompWithState />);

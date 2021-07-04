@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from "@testing-library/react";
 import ConditionalRendering from '../exercises/3_ConditionalRendering';
+import '@testing-library/jest-dom/extend-expect';
 
 it('should have "No number provided"', () => {
   const { getByText, queryByText } = render(<ConditionalRendering />);

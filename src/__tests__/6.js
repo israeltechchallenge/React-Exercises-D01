@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from "@testing-library/react";
 import ListOfProducts from '../exercises/6_ListOfProducts';
+import '@testing-library/jest-dom/extend-expect';
 
 it('should have three products', () => {
   const products = [
